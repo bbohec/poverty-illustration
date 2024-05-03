@@ -1,11 +1,17 @@
 <script lang="ts">
-  import Chart from '../components/Chart.svelte';
-  import { datas } from '../../datas/datas';
+  import PovertyChart from '../components/PovertyChart.svelte';
+  import EuropeanChart from '../components/EuropeanChart.svelte';
+  import { povertyDatas } from '../../datas/datas';
 </script>
 
 <main>
-  <h1>Poverty illustration for {datas.country} in {datas.year}</h1>
-  <Chart />
+  <h1>
+    Poverty illustration for {povertyDatas.country} in {povertyDatas.year}
+  </h1>
+  <PovertyChart />
+
+  <h1>2024 European election - French lists survey 30/04/2024</h1>
+  <EuropeanChart />
 
   <p class="read-the-docs">
     Open source code available <a
